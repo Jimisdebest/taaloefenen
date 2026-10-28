@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f7f5ef">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <title>Spaans oefenen</title>
+  <title>Latijn oefenen</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
     :root{--ink:#202b28;--muted:#7a8580;--cream:#f7f5ef;--white:#fffefa;--green:#285b48;--lime:#d9f078;--line:#e8e7de;--orange:#ef966e;--shadow:0 16px 50px #263b2b12}
@@ -27,7 +27,7 @@
 <body>
   <div class="app">
     <header class="topbar"><div class="brand">Oefenstudio</div><a class="top-right" href="index.html">← Taal kiezen</a></header>
-    <section class="welcome"><div><p class="eyebrow">Jouw persoonlijke woordenlijst</p><h1>Oefen <span>Spaans</span></h1><p class="sub">Voeg je eigen woorden toe en oefen ze wanneer je wilt.</p></div><div class="level">🇫🇷 Niveau A1</div></section>
+    <section class="welcome"><div><p class="eyebrow">Jouw persoonlijke woordenlijst</p><h1>Oefen <span>Latijn</span></h1><p class="sub">Voeg je eigen woorden toe en oefen ze wanneer je wilt.</p></div><div class="level">🇫🇷 Niveau A1</div></section>
     <div class="workspace">
       <main class="main-column">
         <section class="card lesson" id="practice"><button class="practice-exit" id="exit-practice" type="button">× Stoppen</button>
@@ -45,10 +45,10 @@
       <aside class="aside">
         <section class="card aside-card"><h3 class="card-title">Woorden bewaren</h3><p class="card-caption">Neem je lijst mee naar een volgende keer.</p><div class="action-stack"><button class="secondary" id="export">↓ Woorden exporteren</button><label class="secondary import-label" for="import-file">↑ Woorden importeren<input id="import-file" type="file" accept=".json,application/json"></label></div><p class="file-note">Je woorden worden als JSON-bestand opgeslagen. Importeer dat bestand later om de lijst terug te zetten of uit te breiden.</p><p id="io-message" class="io-message" aria-live="polite"></p></section>
         <section class="card aside-card"><h3 class="card-title">Oefeninstellingen</h3><p class="card-caption">Kies de richting en het aantal vragen.</p><label class="direction-label" for="direction">Vraag mij in</label><select id="direction"><option value="fr-nl">Spaans → Nederlands</option><option value="nl-fr">Nederlands → Spaans</option><option value="both">Beide richtingen</option></select><label class="direction-label" for="question-amount">Aantal woorden</label><input id="question-amount" class="typed-answer amount-input" type="number" min="1" value="10"><button class="primary full" id="start-practice">Oefenen ↗</button></section>
-        <section class="phrase"><p class="eyebrow">Frase del día</p><p>Poco a poco,<br>el pájaro hace su nido.</p><small>Poco a poco, el pájaro construye su nido.</small></section>
+        <section class="phrase"><p class="eyebrow">Dictum diei</p><p>Paulatim<br>Aves suo nido facit.</p><small>Paulatim avis nidum suum aedificat.</small></section>
       </aside>
     </div>
-    <p class="bottom-note">Jouw woordenlijst blijft op dit apparaat bewaard. <span>Bon courage!</span></p>
+    <p class="bottom-note">Jouw woordenlijst blijft op dit apparaat bewaard. <span>Veel succes!</span></p>
   </div><div class="toast" id="toast" role="status"></div>
   <script>
     const STORAGE_KEY='bonjour-woordenlijst-spaans-v1';let words=loadWords(),queue=[],position=0,correct=0,locked=false;
